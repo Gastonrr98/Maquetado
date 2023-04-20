@@ -1,96 +1,44 @@
 /*--------------------------------Global--------------------------*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-a{
-    text-decoration: none;
-    color: whitesmoke;
-}
-ul{
-    list-style: none;
-}
-.activo{
-    font-size: 25px;
-    text-decoration: underline;
-    font-weight: bold;
+
+
+/*--------------------------------header---------------------------*/
+header {
+    background-image: url('images/fondo1Color.png'), url('images/fondo1.png');
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh;
+    padding: 50px;
 }
 
-body , html {
-    overflow-x: hidden;
-}
-section{
-    width: 80%;
-    margin: auto;
-}
-.titulo h1{
-    height: 20%;
-    margin-top: 200px;
-    
-}
-.contenido_Pagina{
-    margin: 50px;
-}
-footer{
-    width: 100%;
-    min-height: 100px;
-    padding: 20px 80px;
-    margin: 0;
-    background-color: rgb(57, 43, 75)
-}
-
-.footer_titulo{
+header h2, h1 {
     color: aliceblue;
-    margin: 20px auto;
-    text-align: center;
 }
 
-/*--------------------------------pag prin---------------------------*/
-header{
-    width: 100vw;
-    height: 100vh;
-    background-image: url('images/fondo1.png');
-    background-position: bottom ; 
-    display: flex;
-    align-items:flex-end;
-    justify-content: left;
+header h1 {
+    font-size: 50px;
+    word-spacing: 10px;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
-.contenido-header{
-    margin-top: 50px;
-    color: white;
-    text-align: left;
-}
-
-.contenido-header h2{
-    font-size: 4vmin; /*texto responsive*/ 
-    display: flex;
-    justify-content: left;
-    padding: 5rem;
-    
-}
-
-.linea{
-    width: 150px;
-    height: 4px;
-    background-color: brown;
-    margin: 10px auto;/*centrar linea*/
-    border-radius: 5px;
-}
-
-.contenido-header h1{
-    font-size: 6vmin;
-    padding: 20px;
-}
-
-.contenido-header a{
-    padding: 8px 15px;
+header h2 {
     background-color: blueviolet;
-    border-radius: 30px;
+    padding: 5px;
+    width: 22%;
+    font-family: 'Roboto', sans-serif;
 }
 
-/*-------------------------------Navbar-------------------------------*/
+.bannerText {
+    width: 60%;
+}
+
+/*-------------------------------main-------------------------------*/
 .navbar{
     width: 20%;
     display: flex;
@@ -166,9 +114,6 @@ h4{
 p{
     color: #666262;
     padding: 0px;
-}
-body{
-    background-color: rgb(174, 243, 184);
 }
 
 /*-----------------------------------Nosotras--------------------------*/
@@ -300,7 +245,7 @@ body{
 }
     .columnas_sab p {
         font-size: 10px;
-       
+
     }
     
     .grid .columnas_sab {
