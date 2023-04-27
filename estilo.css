@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
@@ -10,14 +10,12 @@
 /*--------------------------------header---------------------------*/
 header {
     background-image: url('images/fondo1Color.png'), url('images/fondo1.png');
-    background-size: 100%;
+    background-size: 100% 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 50vh;
     padding: 50px;
-    
-
 }
 
 header h2, h1 {
@@ -25,15 +23,16 @@ header h2, h1 {
 }
 
 header h1 {
-    font-size: 50px;
+    font-size: 6vw;
     word-spacing: 10px;
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 header h2 {
+    font-size: 3vw;
+    display: inline-block;
     background-color: #2F2252;
     padding: 5px;
-    width: 10%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -60,6 +59,7 @@ header h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 .calendar-logo p {
@@ -72,7 +72,7 @@ button {
 }
 
 .texto-video {
-    background-image: url('images/video.png');
+    background-image:url('images/fondovideo.png');
     background-size: cover;
     display: flex;
 }
@@ -99,7 +99,7 @@ button {
 /*-----------------------------------Footer--------------------------*/
 footer {
     display: flex;
-    background-color:darkslateblue;
+    background-color:#b095f7;
     color: white;
     justify-content: space-between;
     align-items: center;
@@ -113,4 +113,40 @@ footer {
 
 .textofooter2 img {
     padding: 0px 0px 5px 0px;
+}
+/*-----------------Celular------------------*/
+@media screen and (max-width: 799px) {
+
+    header {
+        background-image: url('images/fondo1Color.png'), url('images/fondo1.png');
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .calendar-logo {
+        box-sizing: border-box;
+        padding: 5%;
+    }
+
+    .texto-calendar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-video{
+        flex-direction: column-reverse; 
+        align-items: center;
+        background-position: center;
+        text-align: center;
+    }
+
+    .textomain, .calendar-logo {
+        width: 80%;
+    }
+
+    .texto-video div{
+        width: 80%;
+
+
+    }
 }
